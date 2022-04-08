@@ -9,7 +9,7 @@ Exemplos de refatoração de código
 
 JAVA 1.8
 
-## ⚙️ Extract Method
+### ⚙️ Extract Method
 A refatoração Extract Method permite que você pegue um fragmento de código que pode ser agrupado, mova-o para um método separado e substitua o código antigo por uma chamada ao método.
 Ao extrair o método, você precisa verificar as variáveis.
 
@@ -17,7 +17,7 @@ Ao extrair o método, você precisa verificar as variáveis.
 Class Trilha.java
 ```
 
-## ⚙️ Internalizar Método
+### ⚙️ Internalizar Método
 Uma função inline é aquela para a qual o compilador copia o código da definição da função diretamente no código da função de chamada, 
 em vez de criar um conjunto separado de instruções na memória. 
 Isso elimina a sobrecarga de ligação de chamadas e pode expor oportunidades de otimização significativas.
@@ -26,14 +26,18 @@ Isso elimina a sobrecarga de ligação de chamadas e pode expor oportunidades de
 Class LeitorDePalestras.java
 ```
 
-## ⚙️ Internalizar Varíavel Temporária
+### ⚙️ Internalizar Varíavel Temporária
 ```
 Class Trilha.java
 ```
 
-## ⚙️ Subistuir varíavel Temporária por consulta
+### ⚙️ Subistuir varíavel Temporária por consulta
 ```
 Class LeitorDePalestra.java
+```
+### ⚙️ Dividir varíavel Temporária
+```
+Class Agenda.java
 ```
 
 [comment]: <> (## 📦 Desenvolvimento)

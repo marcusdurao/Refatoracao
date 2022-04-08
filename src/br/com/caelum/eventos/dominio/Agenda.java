@@ -24,11 +24,24 @@ public class Agenda {
 
 		adicionarPalestrasSePossivel(umaSessaoDaTarde, listaDePalestras);
 		adicionarPalestrasSePossivel(outraSessaoDaTarde, listaDePalestras);
-		
-		String nomeDaTrilha = "PaPo ReTo";
-		Trilha trilha1 = new Trilha(nomeDaTrilha, umaSessaoDaManha, umaSessaoDaTarde);
-		nomeDaTrilha = "DiGiTal";
-		Trilha trilha2 = new Trilha(nomeDaTrilha, outraSessaoDaManha, outraSessaoDaTarde);
+
+		//#############################################################################
+		//CODIGO REFATORADO
+		//#############################################################################
+		String nomeDaTrilha1 = "PaPo ReTo";
+		Trilha trilha1 = new Trilha(nomeDaTrilha1, umaSessaoDaManha, umaSessaoDaTarde);
+
+		String nomeDaTrilha2 = "DiGiTal";
+		Trilha trilha2 = new Trilha(nomeDaTrilha2, outraSessaoDaManha, outraSessaoDaTarde);
+
+		//#####################################################################################
+		//Não devemos mais de uma atribuição para a mesma variável. A não ser que estiver
+		//dentro de um loop. O correto é criar uma varíavel para cada atribuição de valor
+		//#####################################################################################
+		//		String nomeDaTrilha = "PaPo ReTo";
+		//		Trilha trilha1 = new Trilha(nomeDaTrilha, umaSessaoDaManha, umaSessaoDaTarde);
+		//		nomeDaTrilha = "DiGiTal";
+		//		Trilha trilha2 = new Trilha(nomeDaTrilha, outraSessaoDaManha, outraSessaoDaTarde);
 		return asList(trilha1, trilha2);	
 	}
 	
